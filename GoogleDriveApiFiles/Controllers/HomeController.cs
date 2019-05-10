@@ -21,6 +21,7 @@ namespace GoogleDriveApiFiles.Controllers
         public ActionResult DeleteFile(GoogleDriveFiles file)
         {
             Google_Drive_File_Repository.DeleteFile(file);
+            Google_Drive_File_Repository.DeleteFile(file);
             return RedirectToAction("GetGoogleDriveFiles");
         }
 
